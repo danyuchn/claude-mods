@@ -1,0 +1,9 @@
+{
+  "name": "cache-panel",
+  "version": "0.1.0",
+  "description": "Passive 50-minute prompt-cache reminder with a keyboard/mouse panel: keep warm, ping once, or compact, with live cost estimates.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Dustin Yuchen Teng"
+  }
+}
