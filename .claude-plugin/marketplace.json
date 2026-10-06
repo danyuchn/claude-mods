@@ -1,11 +1,19 @@
 {
   "name": "dustin-mods",
-  "owner": { "name": "Dustin Yuchen Teng" },
+  "owner": {
+    "name": "Dustin Yuchen Teng"
+  },
+  "description": "Claude Code mods: screen-guard (screen-share masking) and cache-panel (prompt-cache reminder)",
   "plugins": [
     {
       "name": "screen-guard",
       "source": "./screen-guard",
       "description": "Masks sensitive names, orgs and secrets in the transcript for screen sharing; /mask toggles, click a mask to reveal"
+    },
+    {
+      "name": "cache-panel",
+      "source": "./cache-panel",
+      "description": "Passive 50-minute prompt-cache reminder with keep-warm, ping and compact options and live cost estimates"
     }
   ]
 }

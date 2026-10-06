@@ -1,4 +1,6 @@
-# claude-cache-panel
+# cache-panel
+
+> Part of [claude-mods](../README.md). Moved here from the archived `danyuchn/claude-cache-panel` repo.
 
 A quiet [Claude Code](https://claude.com/claude-code) mod that tells you when your prompt cache is about to go cold, and lets you decide in one click what to do about it: **keep it warm**, **ping it once**, or **compact the conversation**, with live cost estimates for each.
 
@@ -69,28 +71,20 @@ Cost estimates use two bases and pick automatically: API list prices, or, when y
 Requires Claude Code **2.1.287 or newer** (the version that introduced mods). Developed and tested on 2.1.289 on macOS.
 
 ```bash
-git clone https://github.com/danyuchn/claude-cache-panel.git
+claude plugin marketplace add danyuchn/claude-mods
+claude plugin install cache-panel@dustin-mods
 ```
 
-Try it for one session:
+Already open sessions pick it up after `/reload-plugins`.
+
+To try it from a clone for one session only:
 
 ```bash
-claude --plugin-dir /path/to/claude-cache-panel
+git clone https://github.com/danyuchn/claude-mods.git
+claude --plugin-dir claude-mods/cache-panel
 ```
 
-Load it in every session by adding to `~/.claude/settings.json`:
-
-```json
-{
-  "env": {
-    "CLAUDE_CODE_PLUGIN_DIRS": "/path/to/claude-cache-panel"
-  }
-}
-```
-
-If you already use `CLAUDE_CODE_PLUGIN_DIRS`, add the path to your existing list instead of replacing it.
-
-Check the mod loads: `claude plugin validate /path/to/claude-cache-panel`.
+Check the mod loads: `claude plugin validate claude-mods/cache-panel`.
 
 ### The sound needs herdr
 
@@ -99,7 +93,7 @@ The notification goes through `herdr notification show`, so you get sound only i
 ### Try the whole flow in a few minutes
 
 ```bash
-CACHE_PANEL_FAST=1 claude --plugin-dir /path/to/claude-cache-panel
+CACHE_PANEL_FAST=1 claude --plugin-dir claude-mods/cache-panel
 ```
 
 Fast mode reminds after 1 minute, pings every 2 minutes, and skips the context threshold. Send one message, wait a minute, and the button appears. Do not leave this mode on.
@@ -135,4 +129,4 @@ tests/model.test.ts          cost-model assertions
 
 ## License
 
-MIT
+MIT, see the [repository license](../LICENSE).

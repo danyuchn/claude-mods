@@ -12,4 +12,5 @@ local-only.txt
 .env.*
 private/
 
+node_modules/
 .DS_Store
