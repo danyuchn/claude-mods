@@ -1,0 +1,15 @@
+# Engine-generated types and editor config
+.claude-plugin/types/
+*/.claude-plugin/types/
+*/tsconfig.json
+
+# Personal configuration and data: never commit
+terms.txt
+local-only.txt
+*.local.*
+*.private.*
+.env
+.env.*
+private/
+
+.DS_Store

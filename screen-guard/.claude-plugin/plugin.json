@@ -1,0 +1,9 @@
+{
+  "name": "screen-guard",
+  "version": "0.1.0",
+  "description": "Masks sensitive names, orgs and secrets in the transcript for screen sharing; /mask toggles, click a mask to reveal",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Dustin Yuchen Teng"
+  }
+}

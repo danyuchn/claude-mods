@@ -1,0 +1,11 @@
+{
+  "name": "dustin-mods",
+  "owner": { "name": "Dustin Yuchen Teng" },
+  "plugins": [
+    {
+      "name": "screen-guard",
+      "source": "./screen-guard",
+      "description": "Masks sensitive names, orgs and secrets in the transcript for screen sharing; /mask toggles, click a mask to reveal"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# screen-guard local-only paths. Copy to ~/.config/screen-guard/local-only.txt
+# Sessions started inside these folders (or below them) never send text to
+# the cloud judge; candidates are judged by the local Ollama model only.
+# One path prefix per line; ~ is allowed. After editing, run /mask reload.
+
+# ~/clients/confidential-client

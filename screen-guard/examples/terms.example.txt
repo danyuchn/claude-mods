@@ -1,0 +1,14 @@
+# screen-guard term list. Copy to ~/.config/screen-guard/terms.txt
+# One term per line: always masked (case-insensitive, whole word for ASCII).
+# A line starting with ! is never masked.
+# After editing, run /mask reload.
+
+# Names and organisations that must never show on screen
+Alice Chen
+Example Trading Co
+example-client
+
+# Public tools that should never be masked
+!Claude Code
+!Obsidian
+!GitHub
